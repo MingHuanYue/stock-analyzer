@@ -3,8 +3,8 @@
 A股 / 港股 / 美股的联网 K 线与数据分析工具，同一套分析引擎的两个形态。
 
 > **下载成品**（免编译，见 [Releases](https://github.com/MingHuanYue/stock-analyzer/releases)）：
-> `StockAnalyzer-desktop.exe`（Windows 免安装）· `StockAnalyzer-mobile.apk`（安卓）·
-> `StockAnalyzer-mobile.html`（单文件网页，纯血鸿蒙/iOS 用它）
+> `StockAnalyzer-desktop.exe`（Windows ）· `StockAnalyzer-mobile.apk`（安卓）·
+> `StockAnalyzer-mobile.html`（单文件网页，纯血鸿蒙/iOS ）
 
 | 目录 | 形态 | 技术栈 |
 |---|---|---|
@@ -19,7 +19,7 @@ A股 / 港股 / 美股的联网 K 线与数据分析工具，同一套分析引�
   六大段详细分析、情景应对参考
 - 数据：盘口速览、估值与规模（市值/PE/PB）、资金流向、财务摘要（A股）、大盘基准对照
 - 手机版另有：自选股（本地保存，批量刷价）、双指缩放 / 拖动平移 / 十字光标
-- 涨红跌绿（中国习惯），全部中文界面
+- 涨红跌绿，全部中文界面
 
 ## 数据来源
 
