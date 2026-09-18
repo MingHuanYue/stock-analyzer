@@ -1,0 +1,21 @@
+# 构建产物与工具链
+build/
+dist/
+tools/
+发布/
+_shot/
+.venv/
+__pycache__/
+*.pyc
+*.log
+
+# 签名私钥：绝不入库
+*.keystore
+*.jks
+
+# 临时与系统残留
+_staging.txt
+_ks.txt
+NUL
+.DS_Store
+Thumbs.db

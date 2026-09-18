@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#0e1218">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="股票分析助手">
+<title>股票分析助手</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <input id="kw" type="search" inputmode="text" autocomplete="off"
+         autocorrect="off" autocapitalize="characters" enterkeyhint="search"
+         placeholder="代码或名称，如 600519 / 茅台 / AAPL">
+  <button class="btn" id="favBtn">自选</button>
+  <button class="btn primary" id="go">查询</button>
+</div>
+
+<div class="tabs">
+  <div class="seg" id="segPeriod">
+    <button data-v="trend">分时</button>
+    <button data-v="day" class="on">日K</button>
+    <button data-v="week">周K</button>
+    <button data-v="month">月K</button>
+  </div>
+  <div class="sep"></div>
+  <div class="seg" id="segAdjust">
+    <button data-v="qfq" class="on">前复权</button>
+    <button data-v="none">不复权</button>
+    <button data-v="hfq">后复权</button>
+  </div>
+  <div class="sep"></div>
+  <div class="seg" id="segSub">
+    <button data-v="MACD" class="on">MACD</button>
+    <button data-v="KDJ">KDJ</button>
+    <button data-v="RSI">RSI</button>
+  </div>
+</div>
+
+<div class="quote" id="quote">
+  <div class="q-top">
+    <span class="q-name">股票分析助手</span>
+    <span class="q-code" id="qcode"></span>
+    <span class="q-tag" id="qtag">A股</span>
+    <button class="fav-star" id="favStar" title="加入 / 移出自选">☆</button>
+  </div>
+  <div class="q-price">
+    <span class="q-last flat" id="qlast">—</span>
+    <span class="q-chg flat" id="qchg"></span>
+    <span class="q-status" id="qstatus"></span>
+  </div>
+</div>
+
+<div class="chartwrap">
+  <canvas id="chart"></canvas>
+</div>
+<div class="legendbar">
+  <span id="legend">双指缩放 · 拖动平移 · 轻点十字光标</span>
+  <span id="hint"></span>
+</div>
+
+<div class="panel" id="panel">
+  <div class="loading"><span class="spin"></span><span>正在联网获取数据…</span></div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="analysis.js"></script>
+<script src="datasource.js"></script>
+<script src="chart.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
