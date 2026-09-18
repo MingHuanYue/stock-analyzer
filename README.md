@@ -1,6 +1,10 @@
 # 股票分析助手（stock-analyzer）
 
-A股 / 港股 / 美股的联网 K 线与数据分析工具，同一套分析引擎的两个形态：
+A股 / 港股 / 美股的联网 K 线与数据分析工具，同一套分析引擎的两个形态。
+
+> **下载成品**（免编译，见 [Releases](https://github.com/MingHuanYue/stock-analyzer/releases)）：
+> `StockAnalyzer-desktop.exe`（Windows 免安装）· `StockAnalyzer-mobile.apk`（安卓）·
+> `StockAnalyzer-mobile.html`（单文件网页，纯血鸿蒙/iOS 用它）
 
 | 目录 | 形态 | 技术栈 |
 |---|---|---|
